@@ -13,9 +13,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
-        {children}
-      </body>
+      <head>
+        <meta name="apple-mobile-web-app-title" content="D3FFILIATES" />
+      </head>
+      <body>{children}</body>
     </html>
   );
 }
