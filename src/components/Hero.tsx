@@ -20,7 +20,7 @@ const stock_affiliates = [
   {
     name: "APFM",
     link: "https://client.apfm.io/sign-up/MTEx",
-    image: "/APFM.jpg",
+    image: "/apfm.jpg",
   }
 ];
 
