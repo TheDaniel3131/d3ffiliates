@@ -34,14 +34,14 @@ export default function Hero() {
       }`}
     >
       <div className="my-8"></div>
-      <h2 className="text-3xl sm:text-5xl mb-4 font-bold text-center">
+      <h2 className="text-3xl sm:text-5xl mb-8 font-bold text-center">
         Crypto & Stock Affiliates
       </h2>
       <div className="space-y-8">
         <div>
-          {/* <h3 className="text-xl sm:text-2xl font-semibold mb-4 text-center sm:text-left">
+          <h3 className="text-xl sm:text-2xl font-semibold mb-4 text-center">
             Crypto Affiliates
-          </h3> */}
+          </h3>
           <div className="flex flex-wrap justify-center space-x-0 sm:space-x-4">
             {/* Use flexbox, center items and add horizontal space between items */}
             {crypto_affiliates.map((crypto_affiliate) => (
@@ -78,9 +78,9 @@ export default function Hero() {
         <div className="mt-12">
           {" "}
           {/* Add margin-top to create space between sections */}
-          {/* <h3 className="text-xl sm:text-2xl font-semibold mb-4 text-center sm:text-left">
+          <h3 className="text-xl sm:text-2xl font-semibold mb-4 text-center">
             Stock Affiliates
-          </h3> */}
+          </h3>
           <div className="flex flex-wrap justify-center space-x-0 sm:space-x-4 mb-10">
             {" "}
             {/* Use flexbox, center items and add horizontal space between items */}
