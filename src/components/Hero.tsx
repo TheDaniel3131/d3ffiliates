@@ -34,18 +34,18 @@ export default function Hero() {
       }`}
     >
       <div className="my-8"></div>
-      <h2 className="text-5xl mb-4 font-bold text-center">
+      <h2 className="text-3xl sm:text-5xl mb-4 font-bold text-center">
         Crypto & Stock Affiliates
       </h2>
       <div className="space-y-8">
         <div>
-          <h3 className="text-2xl font-semibold mb-4">Crypto Affiliates</h3>
-          <div className="flex flex-wrap justify-center space-x-4">
+          <h3 className="text-xl sm:text-2xl font-semibold mb-4">Crypto Affiliates</h3>
+          <div className="flex flex-wrap justify-center space-x-0 sm:space-x-4">
             {/* Use flexbox, center items and add horizontal space between items */}
             {crypto_affiliates.map((crypto_affiliate) => (
               <div
                 key={crypto_affiliate.name}
-                className={`card p-4 rounded-lg shadow-md flex-1 min-w-[250px] ${
+                className={`card p-4 rounded-lg shadow-md flex-1 min-w-[250px] max-w-[300px] mb-4 sm:mb-0 ${
                   darkMode ? "bg-gray-800 text-white" : "bg-gray-100 text-black"
                 }`}
               >
@@ -57,7 +57,7 @@ export default function Hero() {
                   className="w-full h-64 object-cover rounded-t-lg"
                 />
                 <div className="p-4 text-center">
-                  <h4 className="text-xl font-semibold mb-4">
+                  <h4 className="text-lg sm:text-xl font-semibold mb-4">
                     {crypto_affiliate.name}
                   </h4>{" "}
                   <a
@@ -76,14 +76,14 @@ export default function Hero() {
         <div className="mt-12">
           {" "}
           {/* Add margin-top to create space between sections */}
-          <h3 className="text-2xl font-semibold mb-2">Stock Affiliates</h3>
-          <div className="flex flex-wrap justify-center space-x-4 mb-10">
+          <h3 className="text-xl sm:text-2xl font-semibold mb-2">Stock Affiliates</h3>
+          <div className="flex flex-wrap justify-center space-x-0 sm:space-x-4 mb-10">
             {" "}
             {/* Use flexbox, center items and add horizontal space between items */}
             {stock_affiliates.map((stock_affiliate) => (
               <div
                 key={stock_affiliate.name}
-                className={`card p-4 rounded-lg shadow-md flex-1 min-w-[250px] ${
+                className={`card p-4 rounded-lg shadow-md flex-1 min-w-[250px] max-w-[300px] mb-4 sm:mb-0 ${
                   darkMode ? "bg-gray-800 text-white" : "bg-gray-100 text-black"
                 }`}
               >
@@ -95,7 +95,7 @@ export default function Hero() {
                   className="w-full h-64 object-cover rounded-t-lg"
                 />
                 <div className="p-4 text-center">
-                  <h4 className="text-xl font-semibold mb-4">
+                  <h4 className="text-lg sm:text-xl font-semibold mb-4">
                     {stock_affiliate.name}
                   </h4>{" "}
                   <a
